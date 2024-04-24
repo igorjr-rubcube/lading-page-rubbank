@@ -1,12 +1,13 @@
 :root {
     font-family: 'Ubuntu', sans-serif;
     background: rgb(107, 122, 229);
-    background: radial-gradient(circle, rgba(107, 122, 229, 1) 0%, rgba(29, 28, 62, 1) 100%);
+    background-image: url('/src/assets/background-texture.png'), radial-gradient(circle, rgba(107, 122, 229, 1) 0%, rgba(29, 28, 62, 1) 100%);
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-image: url('/src/assets/background-texture.png');
-    height: 100vh;
+    height: 100%;
 }

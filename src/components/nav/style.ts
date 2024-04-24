@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+// TODO - change all units to relative units
+
 const LightDarkButton = styled.a`
     display: flex;
     align-items: center;
@@ -9,12 +11,13 @@ const LightDarkButton = styled.a`
         height: auto;
     }
     &:hover {
-        cursor: pointer;
-        color: #d8d8d8;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    background-color: #d8d8d8;
     }
 `;
 
-const Menu = styled.div`
+const Menu = styled.nav`
     background-color: #1D1C3E;
     display: flex;
     justify-content: space-between;
@@ -41,11 +44,11 @@ const LogoButton = styled.a`
 const Button = styled.a`
     font-size: 18pt;
     height: auto;
+    margin: 0 2vw;
+    padding: 0;
     background-color: transparent;
     border: none;
     color: #ffffff;
-    margin: 0 2vw;
-    padding: 0;
     p {
         margin: 0;
         padding: 0;

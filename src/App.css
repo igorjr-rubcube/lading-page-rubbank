@@ -1,4 +1,5 @@
 :root {
+    color-scheme: dark;
     font-family: 'Ubuntu', sans-serif;
     background: rgb(107, 122, 229);
     background-image: url('/src/assets/background-texture.png'), radial-gradient(circle, rgba(107, 122, 229, 1) 0%, rgba(29, 28, 62, 1) 100%);

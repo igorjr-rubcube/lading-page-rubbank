@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const BeneficiosSection = styled.section`
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -5,7 +5,7 @@ import Beneficios from './components/beneficios/Beneficios.js';
 import Feedback from './components/feedback/Feedback.js';
 import Footer from './components/footer/Footer.js';
 import CallToAction from './components/cta/CallToAction.js';
-
+import FAQ from './components/faq/FAQ.js';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <Beneficios />
       <Feedback />
       <CallToAction />
+      <FAQ />
       <Footer />
     </>
   );

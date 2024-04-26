@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import LightDarkIcon from './icons/LightDarkIcon';
 import RubbankLogo from './icons/RubbankLogo';
-import { Button, ContaButton, Hamburguer, LightDarkButton, LogoButton, Menu, MenuBar, Right } from './style.ts';
+import { Links, ContaButton, Hamburger, LightDarkButton, LogoButton, MenuBar, NavSection, Right } from './style.ts';
 import HamburgerIcon from './icons/HamburgerIcon.tsx';
 
 function NavBar() {
@@ -18,40 +18,49 @@ function NavBar() {
         };
     }, []);
 
+    const handleLinkTo = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     return (
-        <MenuBar>
-            <LogoButton>
-                <RubbankLogo />
-            </LogoButton>
-            <Right>
-                {isMobile ? (
-                    <Hamburguer>
-                        <HamburgerIcon />
-                    </Hamburguer>
-                ) : (
-                    <Menu>
-                        <Button>
-                            INÍCIO
-                        </Button>
-                        <Button>BENEFÍCIOS</Button>
-                        <Button>
-                            FEEDBACK
-                        </Button>
-                        <Button>
-                            DÚVIDAS
-                        </Button>
-                        <ContaButton>
-                            ABRA SUA CONTA
-                        </ContaButton>
-                    </Menu>
-                )}
-            </Right>
-            {!isMobile && (
-                <LightDarkButton>
-                    <LightDarkIcon />
-                </LightDarkButton>
-            )}
-        </MenuBar>
+        <NavSection>
+            <MenuBar>
+                <LogoButton>
+                    <RubbankLogo />
+                </LogoButton>
+                <Right>
+                    {isMobile ? (
+                        <Hamburger>
+                            <HamburgerIcon />
+                        </Hamburger>
+                    ) : (
+                        <>
+                            <Links onClick={() => handleLinkTo('hero')}>
+                                INÍCIO
+                            </Links>
+                            <Links onClick={() => handleLinkTo('beneficios')}>
+                                BENEFÍCIOS
+                            </Links>
+                            <Links onClick={() => handleLinkTo('feedback')}>
+                                FEEDBACK
+                            </Links>
+                            <Links onClick={() => handleLinkTo('faq')}>
+                                DÚVIDAS
+                            </Links>
+                            <ContaButton onClick={() => handleLinkTo('cta')}>
+                                ABRA SUA CONTA
+                            </ContaButton>
+                            <LightDarkButton>
+                                <LightDarkIcon />
+                            </LightDarkButton>
+                        </>
+                    )}
+                </Right>
+            </MenuBar>
+        </NavSection>
     );
 }
 

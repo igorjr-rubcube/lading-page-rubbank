@@ -1,39 +1,43 @@
 import styled from 'styled-components';
 
-// TODO - change all units to relative units
-
-const LightDarkButton = styled.a`
+const NavSection = styled.nav`
+    position: sticky;
+    top: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    color: #ffffff;
-    border-radius: 50%;
-    svg {
-        width: 2rem;
-        height: auto;
-    }
-    &:hover {
-    cursor: pointer;
-    transition: color 0.5s;
-    color: #d8d8d8;
-    }
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
 `;
 
-const Menu = styled.nav`
+const MenuBar = styled.div`
     background-color: #1D1C3E;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2vh 3vw;
+    margin: 0;
 `;
 
-const MenuBar = styled(Menu)`
-    padding: 1.5vh 1.5vw;
+
+const Right = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-right: 1.5vw;
+    margin: 0;
 `;
 
-const LogoButton = styled.a`
+const LogoButton = styled.span`
     display: flex;
     align-items: center;
     svg {
-        width: 15rem;
+        width: 18vw;
         height: auto;
     }
     color: #ffffff;
@@ -42,11 +46,11 @@ const LogoButton = styled.a`
     }
 `;
 
-const Button = styled.a`
-    font-size: 18pt;
+const Links = styled.a`
+    font-size: 1.5vw;
     height: auto;
-    margin: 0 2vw;
-    padding: 0;
+    margin: 0 0;
+    padding: 0 2vw;
     background-color: transparent;
     border: none;
     color: #ffffff;
@@ -62,12 +66,13 @@ const Button = styled.a`
 `;
 
 const ContaButton = styled.button`
-    font-size: 18pt;
+    font-size: 1.5vw;
     background-color: #ffffff;
     border: none;
-    border-radius: 1rem;
+    border-radius: 1vw;
     color: #1D1C3E;
-    padding: 0.5rem 1.5rem;
+    padding: 1.1vh 1.3vw;
+    margin: 0 2vw 0 0;
     p {
         margin: 0;
         padding: 0;
@@ -79,13 +84,6 @@ const ContaButton = styled.button`
     }
 `;
 
-const Right = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-right: 1.5vw;
-`;
-
 const Hamburger = styled.div`
     display: flex;
     flex-direction: column;
@@ -94,7 +92,7 @@ const Hamburger = styled.div`
     height: 2rem;
     background-color: #ffffff;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.5vw;
     background-color: transparent;
     color: #ffffff;
     &:hover {
@@ -102,4 +100,20 @@ const Hamburger = styled.div`
     }
 `;
 
-export { LightDarkButton, Menu, MenuBar, LogoButton, Button, ContaButton, Right, Hamburger as Hamburguer };
+const LightDarkButton = styled.a`
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 50%;
+    svg {
+        width: 2vw;
+        height: auto;
+    }
+    &:hover {
+    cursor: pointer;
+    transition: color 0.5s;
+    color: #d8d8d8;
+    }
+`;
+
+export { NavSection, MenuBar, LogoButton, Links, ContaButton, Right, Hamburger, LightDarkButton };

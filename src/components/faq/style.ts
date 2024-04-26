@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const FaqSection = styled.section`
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,11 +48,16 @@ const FaqDiv = styled.div`
     margin: 0;
 `;
 
-const FaqQuesion = styled.h3`
+const FaqQuesion = styled.a`
     font-size: 1.2rem;
     color: #ffffff;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    &:hover {
+        color: #d8d8d8;
+        cursor: pointer;
+    }
 `;
 
 const FaqAnswer = styled.p`

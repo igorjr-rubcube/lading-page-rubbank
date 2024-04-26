@@ -7,7 +7,7 @@ function GooglePlayIcon({ background, text }: GooglePlayIconProps) {
             height="82"
             fill="none"
             xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#Google Play Icon__a)">
+            <g clipPath="url(#Google Play Icon__a)">
                 <path
                     d="M0 5a5 5 0 0 1 5-5h210a5 5 0 0 1 5 5v71.59a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5Z"
                     fill={background}

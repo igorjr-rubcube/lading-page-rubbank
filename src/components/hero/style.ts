@@ -1,33 +1,38 @@
 import styled from "styled-components"
 
+const HeroSection = styled.header`
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10vh 0 0  0;
+  box-sizing: border-box;
+  scroll-margin-top: 10vh;
+  margin: 0 0 0 0;
+  border-bottom: 1px solid #6b7ae5;
+`;
+
 const TitleDiv = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
   padding: 0 0;
   margin: 0;
-`;
-
-const HeroSection = styled.header`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 0  4.5rem;
-  margin: 4.7rem 0 0 0;
-  border-bottom: 1px solid #6b7ae5;
+  max-width: 40%;
+  height: 100%;
 `;
 
 const ImgMan = styled.img<{ src: string, alt: string}>`
   padding: 0;
   margin: 0;
-  height: auto;
-  width: 45vw;
+  height: 100%;
+  width: auto;
 `;
 
 const Title = styled.h1`
-  font-size: 4.5rem;
+  font-size: 8vh;
   font-weight: 500;
   color: #ffffff;
   text-align: left;
@@ -43,17 +48,17 @@ const High = styled.span`
 
 
 const BtnCTA = styled.button`
-  width: 24rem;
-  height: 5rem;
-  margin-top: 8rem;
+  width: 28vw;
+  height: 10vh;
+  margin-top: 10vw;
   background-color: #ffffff;
   border: none;
-  border-radius: 1.5rem;
+  border-radius: 3vh;
   cursor: pointer;
   box-shadow: 0 0.3rem 1.5rem 0.00rem #1d1c3e;
   p {
     color: #1d1c3e;
-    font-size: 2rem;
+    font-size: 2.3vw;
     margin: 0;
     padding: 0;
   }

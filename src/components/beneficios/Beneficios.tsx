@@ -28,9 +28,9 @@ const cards: CardProps[] = [
     }
 ];
 
-function Beneficios() {
+function Beneficios({id} : {readonly id: string}) {
     return (
-        <BeneficiosSection>
+        <BeneficiosSection id={id}>
             <Title>Benefícios</Title>
             <CardDiv>
                 {cards.map((card) => (

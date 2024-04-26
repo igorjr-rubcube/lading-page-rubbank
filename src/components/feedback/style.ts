@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const FeedbackSection = styled.section`
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,10 +12,10 @@ const FeedbackSection = styled.section`
 
 const Title = styled.h2`
     color: #FFFFFF;
-    font-size: 4rem;
+    font-size: 5vw;
     font-weight: 400;
     text-align: center;
-    padding: 1rem;
+    padding: 1vw;
     margin: 0;
 `;
 
@@ -29,23 +29,23 @@ const CardDiv = styled.div`
 `;
 
 const Card = styled.div`
-    width: 25rem;
-    height: 17rem;
+    width: 25vw;
+    height: 26vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0.5rem 0 1rem;
-    padding: 1rem  1rem 1rem 1rem;
+    margin: 0 0.5vw 0 1vw;
+    padding: 1vw;
     background-color: #1d1c3e;
-    border-radius: 0.75rem;
-    border: 0.3rem solid #FFFFFF;
+    border-radius: 0.75vw;
+    border: 0.3vw solid #FFFFFF;
 `;
 
 const Columns = styled.div`
     width: fit-content;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     margin: 0;
     padding: 0;
 `;
@@ -62,26 +62,26 @@ const CardColumnLeft = styled.div`
 `;
 
 const CardImg = styled.img`
-    max-width: 7rem;
-    max-height: 7rem;
+    max-width: 7vw;
+    max-height: 7vw;
     width: auto;
     height: auto;
     border-radius: 50%;
-    border: 0.2rem solid #FFFFFF;
+    border: 0.2vw solid #FFFFFF;
 `;
 
 const CardName = styled.h3`
     color: #FFFFFF;
-    font-size: 1.4rem;
+    font-size: 1.4vw;
     font-weight: 400;
     text-align: center;
-    padding: 1rem;
+    padding: 1vw;
     margin: 0;
 `;
 
 const CardRole = styled.h4`
     color: #FFFFFF;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     font-weight: 400;
     text-align: center;
     padding: 0;

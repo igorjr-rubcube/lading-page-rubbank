@@ -2,7 +2,7 @@ function MapPinIcon() {
     return (
         <svg
             width="86"
-            height="auto"
+            height="115"
             viewBox="0 0 86 115"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">

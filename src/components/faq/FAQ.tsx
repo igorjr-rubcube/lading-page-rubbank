@@ -35,7 +35,7 @@ const faqData: FAQProps[] = [
     }
 ];
 
-function FAQ() {
+function FAQ({id} : {readonly id: string}) {
     const [showAnswer, setShowAnswer] = useState<boolean[]>(faqData.map(() => false));
 
     const toggleAnswer = (index: number) => {
@@ -47,13 +47,13 @@ function FAQ() {
     };
 
     return (
-        <FaqSection>
+        <FaqSection id={id}>
             <Title>Dúvidas Frequentes</Title>
             <SubTitle>Se sua dúvida não está aqui, <High>fale conosco</High>.</SubTitle>
             {faqData.map((faq, index) => (
                 <FaqDropdown key={index}>
                     <FaqDiv>
-                        <FaqQuesion>{faq.question}</FaqQuesion>
+                        <FaqQuesion onClick={() => toggleAnswer(index)}>{faq.question}</FaqQuesion>
                         <BtnOpen onClick={() => toggleAnswer(index)}>
                             {showAnswer[index] ? <MinusIcon /> : <PlusIcon />}
                         </BtnOpen>

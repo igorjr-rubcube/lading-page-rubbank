@@ -30,9 +30,9 @@ const cards: cardProps[] = [
     },
 ];
 
-function Feedback() {
+function Feedback({id} : {readonly id: string}) {
     return (
-        <FeedbackSection>
+        <FeedbackSection id={id}>
             <Title>Feedback</Title>
             <CardDiv>
                 {cards.map((card) => (

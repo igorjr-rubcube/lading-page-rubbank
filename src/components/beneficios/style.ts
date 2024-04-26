@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const BeneficiosSection = styled.section`
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,10 +12,10 @@ const BeneficiosSection = styled.section`
 
 const Title = styled.h2`
     color: #FFFFFF;
-    font-size: 4rem;
+    font-size: 5vw;
     font-weight: 400;
     text-align: center;
-    padding: 1rem;
+    padding: 1vw;
     margin: 0;
 `;
 
@@ -29,25 +29,25 @@ const CardDiv = styled.div`
 `;
 
 const Card = styled.div`
-    width: 18rem;
-    height: 20rem;
+    width: 35vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 1rem;
+    margin: 0 1vw;
     padding: 0;
     background-color: #1d1c3e;
-    border-radius: 1.5rem;
+    border-radius: 1.5vw;
     border: 0.3rem solid #FFFFFF;
 `;
 
 const CardTitle = styled.h3`
     color: #FFFFFF;
-    font-size: 2rem;
+    font-size: 3.5vh;
     font-weight: 400;
     text-align: center;
-    padding: 1rem;
+    padding: 1vw;
     margin: 0;
 `;
 
@@ -56,7 +56,7 @@ const CardIcon = styled.span`
     align-items: center;
     color: #ffffff;
     svg {
-        height: 10rem;
+        height: 12vh;
         width: auto;
     }
 `;

@@ -1,8 +1,8 @@
 import { BtnCTA, HeroSection, High, ImgMan, Title, TitleDiv } from "./style";
 
-function Hero() {
+function Hero({id} : {readonly id: string}) {
     return (
-        <HeroSection>
+        <HeroSection id={id}>
                 <TitleDiv>
                     <Title>
                         O <High>banco digital</High> com <High>tudo</High> que sua vida financeira <High>precisa</High>

@@ -2,7 +2,7 @@ function InfoIcon() {
     return (
         <svg
             width="114"
-            height="auto"
+            height="115"
             viewBox="0 0 114 115"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">

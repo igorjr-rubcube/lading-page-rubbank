@@ -11,9 +11,9 @@ const email = "suporte.rubbank.igorj@gmail.com";
 const phone = "+55 (18) 99141-7288";
 
 
-function Footer() {
+function Footer({id} : {readonly id: string}) {
     return (
-        <FooterSection>
+        <FooterSection id={id}>
             <Container align="left">
                 <Logo>
                     <RubbankLogo />

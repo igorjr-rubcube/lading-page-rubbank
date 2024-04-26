@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const CtaSection = styled.section`
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;

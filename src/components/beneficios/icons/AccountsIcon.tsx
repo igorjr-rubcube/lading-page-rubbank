@@ -2,7 +2,7 @@ function AccountsIcon() {
     return (
         <svg
             width="144"
-            height="auto"
+            height="115"
             viewBox="0 0 144 115"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">

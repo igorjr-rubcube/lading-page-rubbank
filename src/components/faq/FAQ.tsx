@@ -10,33 +10,29 @@ type FAQProps = {
 
 const faqData: FAQProps[] = [
     {
+        question: "A Rubbank é um banco digital?",
+        answer: "Sim, a Rubbank é um banco digital líder em inovação e tecnologia."
+    },
+    {
         question: "Como faço para me tornar um cliente?",
-        answer: "Para se tornar um cliente, basta preencher o formulário de cadastro em nosso site."
+        answer: "Para se tornar um cliente, basta baixar o App e criar sua conta."
     },
     {
-        question: "Qual o valor do frete?",
-        answer: "O valor do frete é calculado de acordo com a distância e o peso do produto."
+        question: "Posso ter mais de uma conta?",
+        answer: "Sim, você pode ter quantas contas desejar, cada conta do tipo que desejar."
     },
     {
-        question: "Qual o prazo de entrega?",
-        answer: "O prazo de entrega varia de acordo com a localidade e a disponibilidade do produto."
+        question: "Posso agendar transferências através do App?",
+        answer: "Sim, você pode agendar transferências para qualquer data futura através do App."
     },
     {
-        question: "Como faço para rastrear meu pedido?",
-        answer: "Para rastrear seu pedido, basta acessar a área do cliente em nosso site."
+        question: "Preciso comprovar renda para abrir uma conta?",
+        answer: "Não, você não precisa comprovar renda para abrir uma conta na Rubbank, basta baixar o App e criar sua conta."
     },
     {
-        question: "Posso trocar um produto?",
-        answer: "Sim, você pode trocar um produto em até 7 dias após o recebimento."
-    },
-    {
-        question: "Como faço para cancelar um pedido?",
-        answer: "Para cancelar um pedido, basta acessar a área do cliente em nosso site."
-    },
-    {
-        question: "Qual o horário de atendimento?",
-        answer: "Nosso horário de atendimento é de segunda a sexta, das 8h às 18h."
-    },
+        question: "Quais tarifas são cobradas?",
+        answer: "A Rubbank é um banco digital completamente livre de tarifas ou taxas."
+    }
 ];
 
 function FAQ() {

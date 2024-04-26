@@ -6,14 +6,15 @@ const LightDarkButton = styled.a`
     display: flex;
     align-items: center;
     color: #ffffff;
+    border-radius: 50%;
     svg {
         width: 2rem;
         height: auto;
     }
     &:hover {
     cursor: pointer;
-    transition: background-color 0.5s;
-    background-color: #d8d8d8;
+    transition: color 0.5s;
+    color: #d8d8d8;
     }
 `;
 
@@ -85,4 +86,20 @@ const Right = styled.div`
     margin-right: 1.5vw;
 `;
 
-export { LightDarkButton, Menu, MenuBar, LogoButton, Button, ContaButton, Right };
+const Hamburger = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 2rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: #ffffff;
+    &:hover {
+        cursor: pointer;
+    }
+`;
+
+export { LightDarkButton, Menu, MenuBar, LogoButton, Button, ContaButton, Right, Hamburger as Hamburguer };

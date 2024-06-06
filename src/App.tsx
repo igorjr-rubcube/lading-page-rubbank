@@ -6,7 +6,6 @@ import Feedback from './components/feedback/Feedback.js';
 import Footer from './components/footer/Footer.js';
 import CallToAction from './components/cta/CallToAction.js';
 import FAQ from './components/faq/FAQ.js';
-import React, { useEffect, useState } from 'react';
 
 
 function App() {

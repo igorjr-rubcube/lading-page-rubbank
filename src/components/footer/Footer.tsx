@@ -12,6 +12,12 @@ const phone = "+55 (18) 99141-7288";
 
 
 function Footer({id} : {readonly id: string}) {
+    const handleLinkTo = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
     return (
         <FooterSection id={id}>
             <Container align="left">
@@ -43,10 +49,10 @@ function Footer({id} : {readonly id: string}) {
                 </Column>
                 <Column>
                     <ColumnTitle>LINKS RÁPIDOS</ColumnTitle>
-                    <ColumnLink>INÍCIO</ColumnLink>
-                    <ColumnLink>BENEFÍCIOS</ColumnLink>
-                    <ColumnLink>FEEDBACK</ColumnLink>
-                    <ColumnLink>DÚVIDAS</ColumnLink>
+                    <ColumnLink onClick={() => handleLinkTo('hero')}>INÍCIO</ColumnLink>
+                    <ColumnLink onClick={() => handleLinkTo('beneficios')}>BENEFÍCIOS</ColumnLink>
+                    <ColumnLink onClick={() => handleLinkTo('feedback')}>FEEDBACK</ColumnLink>
+                    <ColumnLink onClick={() => handleLinkTo('faq')}>DÚVIDAS</ColumnLink>
                 </Column>
             </Container>
         </FooterSection>

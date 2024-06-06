@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import LightDarkIcon from './icons/LightDarkIcon';
 import RubbankLogo from './icons/RubbankLogo';
-import { Links, ContaButton, Hamburger, LightDarkButton, LogoButton, MenuBar, NavSection, Right } from './style.ts';
+import { Links, ContaButton, Hamburger, LogoButton, MenuBar, NavSection, Right } from './style.ts';
 import HamburgerIcon from './icons/HamburgerIcon.tsx';
 
 function NavBar() {
@@ -53,9 +52,9 @@ function NavBar() {
                             <ContaButton onClick={() => handleLinkTo('cta')}>
                                 ABRA SUA CONTA
                             </ContaButton>
-                            <LightDarkButton>
+                            {/* <LightDarkButton>
                                 <LightDarkIcon />
-                            </LightDarkButton>
+                            </LightDarkButton> */}
                         </>
                     )}
                 </Right>

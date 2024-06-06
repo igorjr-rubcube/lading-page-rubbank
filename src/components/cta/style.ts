@@ -31,7 +31,7 @@ const QrCode = styled.img`
     margin: 3rem 0;
 `;
 
-const BtnStore = styled.button`
+const BtnStore = styled.a`
     margin: 0;
     padding: 0;
     border: none;

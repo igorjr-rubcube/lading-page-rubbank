@@ -122,7 +122,7 @@ const Quote = styled.div`
 const CardContent = styled.p`
     display: flex;
     color: #FFFFFF;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     padding: 0;
     margin: 0;
